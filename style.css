@@ -1,0 +1,690 @@
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body{
+	font-family:'Open Sans', sans-serif;
+	background-color: rgba(0,0,0,.3);
+}
+
+.header{
+	margin: 0 auto;
+	width: 100%;
+	background-color: #1BA261;
+	position: sticky;
+	left: 0;
+	top: 0;
+	padding:0  30px;
+	display: flex;
+	z-index: 100;
+}
+
+.header .logo{
+	width: 30%;
+	float: left;
+	color: #fff;
+}
+.header .logo img{
+	width: 70%;
+	vertical-align: middle;
+	height: 60px;
+	margin-right: 10px;
+}
+
+.header .logo .fa-bars{
+	display: none;
+}
+.header .menu{
+	float: right;
+	list-style: none;
+	width: 70%;
+}
+
+.header .menu li{
+	float: left;
+	width: calc(100% / 6);
+}
+
+.header .menu li a{
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+	position: relative;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.header .menu li a.active{
+	background-color: #fff;
+}
+
+.header .menu li a:after{
+	content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0%;
+    width: 0%;
+    background-color: rgba(255,20,147,.3);
+    z-index: -1;
+    transition:ease-in .4s;
+}
+
+.header .menu li a:hover:after{
+	width: 100%;
+	height: 100%;
+}
+#about{
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px 20px 0;
+	min-height: 700px;
+	display: flex;
+	justify-content:space-around;
+	background-color: #fff;
+	background-image: url("HomeDesktopSlide0.jpg");
+	background-size: cover;
+
+}
+
+
+.imgbox{
+	width:28%;
+	background-color: rgba(120,159,217,.4);
+}
+
+.imgbox img{
+	width: 100%;
+	border-radius: 5px;
+	/*box-shadow: 0 0 5px 4px rgba(0,0,0,.5);*/
+}
+
+.imgbox a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 35px;
+	background-color: #FDC608;
+	padding: 10px;
+	border-radius: 10px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Dancing Script', cursive;
+}
+
+.details{
+	width: 72%;
+	padding: 0 10px;
+	background-color: rgba(120,159,217,.5);
+}
+
+.details h1{
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.details h1 span{
+	color: #FDC608;
+}
+
+.details h2{
+	margin: 10px 0;
+}
+
+.details p{
+	font-size: 20px;
+	line-height: 25px;
+	text-align: justify;
+	margin-bottom: 15px;
+	font-family: "monotype corsiva";
+} 
+
+.details table tr td{
+	padding: 5px;
+	font-weight: bold;
+}
+
+.details ul{
+	margin-top: 20px;
+	width: 70%;
+	list-style: none;
+	display: flex;
+}
+
+.details ul li{
+	position: relative;
+	transition:.5s;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	background-color: #fff;
+
+}
+.details ul li:nth-child(1){
+   border-color: #9CB5DA;
+}
+.details ul li:nth-child(2){
+   border-color: #63CDF1;
+}
+.details ul li:nth-child(3){
+	border-color: #99CEE0;
+}
+.details ul li:nth-child(4){
+	border-color: #68C8ED;
+}
+.details ul li:nth-child(5){
+	border-color: #ADAA97;
+}
+.details ul li:nth-child(6){
+	border-color: #FCDDDC;
+}
+.details ul li:nth-child(7){
+	border-color: #989898;
+}
+.details ul li:nth-child(8){
+	border-color: #53CDF5;
+}
+.details ul li:hover{
+	width: 200px;
+}
+
+.details ul li span{
+	position: absolute;
+	left: 60px;
+	top: 50%;
+	transform: translateY(-50%);
+	visibility: hidden;
+	color: #000;
+	text-transform: capitalize;
+	background-color: #fff;
+}
+
+.details ul li:hover span{
+	visibility: visible;
+}
+
+#skill{
+	width: 100%;
+	margin: 0 auto;
+	min-height: 700px;
+	padding: 100px 20px 0;
+	background-color: #fff;
+}
+
+#skill>h1{
+	margin: 40px auto 0;
+	width: 30%;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	background-image: url("brush-PowerPoint.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#skill p{
+	margin: 20px 0;
+	text-align: justify;
+}
+
+#skill .technical-skill{
+   margin-top: 10px;
+   width: 50%;
+   float: left;
+   padding: 10px;
+   text-align: center;
+   overflow: hidden;
+}
+
+#skill .personal-skill{
+  margin-top: 10px;
+  width: 50%;
+  float: right;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px;
+}
+
+
+.progress{
+   width: 100%;
+   background-color: rgba(0,0,0,.2);
+   margin-bottom: 20px;
+}
+
+.progress span{
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	background:linear-gradient(45deg,#007BFF,#6C757D,#28A745);
+	padding: 5px;
+	text-align: right;
+}
+#education{
+	padding: 100px 30px 0;
+	min-height: 700px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	overflow: hidden;
+
+}
+#education>h1{
+	text-align: center;
+	padding: 10px;
+	width: 30%;
+	margin: 0 auto;
+	background-image: url("brush-PowerPoint2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.education-details-container{
+	position: relative;
+	width:100%;
+	padding: 20px;
+	height: 600px;
+}
+
+.education-details-container h3{
+   letter-spacing: 2px;
+}
+
+.education-details-container h2 span{
+	display: block;
+	color:#FEC608;
+}
+
+.education-details-container p{
+	text-align: justify;
+	padding: 10px 0;
+}
+
+
+
+.education-details-container:before{
+	position: absolute;
+	content: " ";
+	height: 67%;
+	width: 10px;
+	background-color: #7E6204;
+	left:50%;
+	top: 10%;
+	transform: translateX(-50%);
+}
+
+.education-details-container>div{
+	width: 45%;
+	background-color: rgba(0,0,0,.2);
+	margin-bottom:110px;
+	padding: 20px;
+	position: relative;
+	
+}
+
+.education-details-container>div:nth-child(2){
+	margin-top: 125px;
+}
+
+.education-details-container>div:nth-child(4){
+	margin-bottom: 0px;
+}
+
+.education-details-container .education-details-1>h1{
+	position: absolute;
+	background-color: #FEC608;
+	right: -17%;
+	top: -7px;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	border:5px solid
+	rgba(0,0,0,.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.education-details-container .education-details-1:before{
+	content: " ";
+	position: absolute;
+	width: 112%;
+	height: 5px;
+	background-color: #7E6204;
+	left: 0;
+	top: -5px;
+}
+
+.education-details-container .education-details-2>h1{
+	position: absolute;
+	background-color: #FEC608;
+	left: -17%;
+	top: -7px;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	border:5px solid rgba(0,0,0,.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.education-details-container .education-details-2:before{
+	content: " ";
+	position: absolute;
+	width: 112%;
+	height: 5px;
+	background-color: #7E6204;
+	right: 0;
+	top: -5px;
+}
+
+.education-details-container .education-details-3>h1{
+	position: absolute;
+	background-color: #FEC608;
+	right: -17%;
+	top: -7px;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	border:5px solid rgba(0,0,0,.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.education-details-container .education-details-3:before{
+	content: " ";
+	position: absolute;
+	width: 112%;
+	height: 5px;
+	background-color: #7E6204;
+	left: 0;
+	top: -5px;
+}
+
+.education-details-container .education-details-4>h1{
+	position: absolute;
+	background-color: #FEC608;
+	left: -17%;
+	top: -7px;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	border:5px solid rgba(0,0,0,.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.education-details-container .education-details-4:before{
+	content: " ";
+	position: absolute;
+	width: 112%;
+	height: 5px;
+	background-color: #7E6204;
+	right: 0;
+	top: -5px;
+}
+#service{
+	min-height: 700px;
+	padding-top: 100px;
+	background-color: #fff;
+	width: 100%;
+	margin: 0 auto
+}
+#service>h1{
+	width: 30%;
+	margin: 0 auto;
+	padding: 20px 0 10px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	background-image: url("brush-PowerPoint3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#service>div{
+	width: calc(100% / 2);
+}
+
+#service .left{
+	float: left;
+	text-align: justify;
+	padding: 0 20px 0;
+}
+
+#service .right{
+	float: right;
+	text-align: justify;
+	padding: 0 20px 0;
+}
+
+#service>div img{
+	display: block;
+	margin: 20px auto 0;
+}
+
+#service>div>h2{
+	text-align: center;
+}
+
+#portfolio{
+	padding: 100px 20px 0;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+#portfolio>h1{
+	width: 30%;
+	margin: 0 auto 20px;
+	text-align: center;
+	background-image: url("brush-PowerPoint2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	padding: 10px;
+}
+
+.images{
+	margin-top: 50px;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.images>li{
+	width:calc((100% - 40px) / 4);
+	height: 250px;
+	margin: 5px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px 4px rgba(0,0,0,.5);
+	overflow: hidden;
+}
+
+
+.images>li img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	animation:animate 4s infinite;
+	animation-timing-function: ease-in;
+}
+
+@keyframes animate{
+	to{transform: scale(1.3);}
+}
+
+.images>li:nth-child(1) img{
+	animation-delay:.5s; 
+}
+
+.images>li:nth-child(2) img{
+	animation-delay: 1s;
+}
+
+.images>li:nth-child(3) img{
+	animation-delay: 1.5s;
+}
+
+.images>li:nth-child(4) img{
+	animation-delay: 2s;
+}
+
+.images>li:nth-child(5) img{
+	animation-delay: 2.5s;
+}
+
+.images>li:nth-child(6) img{
+	animation-delay:3s; 
+}
+
+.images>li:nth-child(7) img{
+	animation-delay: 3.5s;
+}
+
+.images>li:nth-child(8) img{
+	animation-delay:4s; 
+}
+
+
+.images>li img:hover{
+	animation:none;
+	cursor: pointer;
+}
+
+#contact{
+	width: 100%;
+	padding: 100px 30px 0;
+	min-height: 700px;
+	background-color: #fff;
+}
+
+#contact>h1{
+	width: 30%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+	color: #fff;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	background-image: url("brush-PowerPoint.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#contact .left{
+	width:40%;
+	float: left;
+	padding-right: 10px;
+}
+
+#contact .right{
+	width:60%;
+	float: right;
+	padding-right: 10px;
+}
+
+#contact .left h2{
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+#contact .left p{
+	margin-bottom: 20px;
+}
+
+#contact .right label{
+   display: block;
+   margin-top: 20px;
+   padding: 10px;
+   font-weight: bold;
+   width: 100%
+}
+
+#contact .right label span{
+	color: #f00;
+}
+
+
+
+#contact .right input{
+	position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-right: 10px;
+  width: 45%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(27,162,97,0.5);
+}
+#contact .right input[type="email"]{
+	width: 90%;
+}
+#contact .right input:hover,
+#contact .right input:focus{
+	 box-shadow: 0 0 4px rgba(27,162,97,0.5);
+}
+#contact .right input::placeholder{
+   position: relative;
+   transition: ease-in .5s;
+}
+
+#contact .right input:focus::placeholder{
+   bottom: 15px;
+
+}
+
+textarea{
+	border: 1px solid rgba(27,162,97,0.5);
+	
+}
+
+.btn{
+	text-align: center;
+	margin-top: 25px;
+}
+
+.btn input[type="submit"]{
+	text-transform: uppercase;
+	background-color: #798598;
+	border-bottom: none;
+	color: #fff;
+	transition:ease-in .5s;
+	border-radius: 5px;
+	box-sizing: border-box;
+	
+}
+
+.btn input[type="submit"]:hover{
+	background-color: #9bddd1;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
